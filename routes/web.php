@@ -17,13 +17,13 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('movie', 'MovieController@showAll');
+$router->get('movie/showAll', 'MovieController@showAll');
 
 $router->post('movie/add', 'MovieController@add');
 
 $router->get('movie/{id}', 'MovieController@showId');
 
-$router->get('movie/{id}/delete', 'MovieController@delete');
+$router->get('movie/delete/{id}', 'MovieController@delete');
 
 $router->post('movie/edit/{id}', 'MovieController@edit');
 

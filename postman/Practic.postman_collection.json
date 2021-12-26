@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "ec2e8986-67d1-4c9b-b9bd-7d4f4fd98437",
+		"name": "Practic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Добавление",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "movie_name",
+							"value": "Человек-Паук",
+							"type": "text"
+						},
+						{
+							"key": "ratings",
+							"value": "8.3",
+							"type": "text"
+						},
+						{
+							"key": "fees",
+							"value": "403706375 ",
+							"type": "text"
+						},
+						{
+							"key": "realese_date",
+							"value": "03.05.2002",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/movie/add",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"movie",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изменение",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Показывание всего",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/movie/showAll",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"movie",
+						"showAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Показывание по Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/movie/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"movie",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/movie/delete/2",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"movie",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Проверка работоспособности",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost",
+					"host": [
+						"localhost"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

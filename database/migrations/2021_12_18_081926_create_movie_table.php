@@ -15,10 +15,10 @@ class CreateMovieTable extends Migration
     {
         Schema::create('movie', function (Blueprint $table) {
             $table->id();
-            $table->string('movie_name')->comment('Название фильма')->nullable();
-            $table->string('ratings')->comment('Оценки критиков')->nullable();
-            $table->string('fees')->comment('Кассовые сборы')->nullable();
-            $table->string('realese_date')->comment('Дата выхода')->nullable();
+            $table->string('movie_name')->comment('Название фильма');
+            $table->string('ratings')->comment('Оценки критиков');
+            $table->string('fees')->comment('Кассовые сборы');
+            $table->string('realese_date')->comment('Дата выхода');
         });
     }
 
